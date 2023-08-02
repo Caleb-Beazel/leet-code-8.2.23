@@ -3,9 +3,9 @@ class Solution:
         list_note = list(ransom_note)
         list_mag = list(magazine)
 
-        for letter in note:
-            if letter in mag:
-                mag.remove(letter)
+        for letter in list_note:
+            if letter in list_mag:
+                list_mag.remove(letter)
             else:
                 return False
         return True
